@@ -1,0 +1,13 @@
+package TestVigrantAssignment;
+
+import org.junit.Test;
+
+public class DemoFile {
+
+	@Test
+	public void run()
+	{
+		System.out.println("hi this is vinay");
+	}
+
+}

@@ -1,0 +1,40 @@
+package TestVigrantAssignment;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class ImdbAndWiki {
+public static  WebDriver driver1=null;
+public String Imdbdate=null;
+public String Imdborigin=null;
+public String Wikidate=null;
+public String Wikiorigin=null;
+
+
+	@Test(priority = 1)
+	public void Imdb()
+	{
+		try
+		{
+			//Launching the chrome browser and navigating the req url
+			
+			String path=System.getProperty("user.dir");
+			System.setProperty("webdriver.chrome.driver", path+"\\Drivers\\chromedriver.exe");
+			driver1=new ChromeDriver();
+			driver1.manage().window().maximize();
+			driver1.get("https://www.imdb.com/title/tt9389998/?ref_=fn_al_tt_1");
+			
+			//Getting the required Data in String format from IMDB and feeding
+			//into globalized String variables
+			
+			Imdbdate=driver1.findElement(By.xpath("//a[text()='December 17, 2021 (United States)']")).getText();
+			Imdborigin=driver1.findElement(By.xpath("//li[@class='ipc-inline-list__item']/following::li[75]//following::li")).getText();
+			System.out.println(Imdbdate+"  "+Imdborigin);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

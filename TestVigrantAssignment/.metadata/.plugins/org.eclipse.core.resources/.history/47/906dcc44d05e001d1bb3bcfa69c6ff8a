@@ -1,0 +1,26 @@
+package TestVigrantAssignment;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class ImdbAndWiki {
+public static  WebDriver diver=null;
+public String Imdbdate=null;
+public String Imdborigin=null;
+public String Wikidate=null;
+public String Wikiorigin=null;
+
+
+	@Test(priority = 1)
+	public void Imdb()
+	{
+		try
+		{
+			String path=System.getProperty("user.dir");
+			System.setProperty("webdriver.chrome.driver", path+"\\");
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-08T00:57:19 IST" name="logs" finished-at="2022-11-08T00:57:24 IST" duration-ms="5401">
+    <groups>
+    </groups>
+    <test started-at="2022-11-08T00:57:19 IST" name="vinay" finished-at="2022-11-08T00:57:24 IST" duration-ms="5401">
+      <class name="TestVigrantAssignment.ImdbAndWiki">
+        <test-method signature="Imdb()[pri:1, instance:TestVigrantAssignment.ImdbAndWiki@306f16f3]" started-at="2022-11-08T00:57:19 IST" name="Imdb" finished-at="2022-11-08T00:57:24 IST" duration-ms="5377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Imdb -->
+      </class> <!-- TestVigrantAssignment.ImdbAndWiki -->
+    </test> <!-- vinay -->
+  </suite> <!-- logs -->
+</testng-results>
